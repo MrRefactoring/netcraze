@@ -1,6 +1,6 @@
 {
   "name": "netcraze",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript API client for Netcraze routers (SSH, CLI: show version, system save, components)",
   "type": "module",
   "main": "dist/index.js",
