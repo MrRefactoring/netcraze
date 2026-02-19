@@ -1,0 +1,51 @@
+{
+  "name": "netcraze",
+  "version": "0.0.1",
+  "description": "TypeScript API client for Netcraze routers (SSH, CLI: show version, system save, components)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": ["netcraze", "router", "ssh", "cli", "api-client", "keenetic"],
+  "author": "Vladislav Tupikin <vladislav.tupikin@icloud.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrRefactoring/netcraze.git"
+  },
+  "files": ["dist"],
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ssh2": "^1.17.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.19.11",
+    "@types/ssh2": "^1.15.5",
+    "@vitest/coverage-v8": "^4.0.18",
+    "dotenv": "^17.3.1",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.30.0"
+}
